@@ -48,17 +48,22 @@ pincracker 10.10.11.234 8080
 Execution time comparison when brute-forcing a full 4-digit PIN (0000-9999) against the same lab environment:
 
 ### Python:
-[!] Note that IP and Port are hardcoded in the script that Hack The Box grants us.
+Note that IP and Port are hardcoded in the script that Hack The Box grants us.
+
+```bash
 ➜ python pincracker.py
 <SNIP>
 Correct PIN found: XXXX
 Flag: XXXXXXXXXXXXXXXXXXXXX
 Bruteforcing attack took: 641.35 seconds to complete
+```
 
 ### Go:
+```bash
 ➜ pincracker 154.57.164.74 31796
 [*] Scanning target -> IP: 154.57.164.74 | Port: 31796
 
 [+] Pin was found: XXXX
 [+] Flag: XXXXXXXXXXXXXXXXXXXXX
 [*] Total time: 16.759814634s
+```
