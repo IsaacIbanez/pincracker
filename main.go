@@ -26,13 +26,13 @@ func main() {
 	var port string
 
 	host, targetPort, err := net.SplitHostPort(os.Args[1])
-	
+
 	if err == nil {
 		ip = host
 		port = targetPort
 	} else {
 		ip = os.Args[1]
-		
+
 		if len(os.Args) < 3 {
 			fmt.Println("[!] ERROR: Specify the port.")
 			fmt.Println("[*] Usage: pincracker <ip:port>  OR  pincracker <ip> <port>")
@@ -80,6 +80,7 @@ func main() {
 
 	wg.Wait()
 	fmt.Println("\n[-] Program exhausted. PIN not found.")
-	
+
 	fmt.Printf("[*] Total time: %s\n", time.Since(start))
 }
+
