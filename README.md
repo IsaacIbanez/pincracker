@@ -26,6 +26,7 @@ go build -o pincracker main.go
 
 ### 2. Make it Global (Optional)
 To run the command from any directory without typing `./`, add it to your path. Some examples are:
+
 **Linux / macOS:**
 ```bash
 sudo mv pincracker /usr/local/bin/
