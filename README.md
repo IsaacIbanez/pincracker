@@ -38,7 +38,7 @@ Move pincracker.exe to a dedicated tools folder (e.g., C:\Tools) and add that fo
 ### 3. Usage
 The script automatically parses your target input format:
 ```Bash 
-Option A: IP and Port together
+# Option A: IP and Port together
 pincracker 10.10.11.234:8080
 
 # Option B: IP and Port separated
